@@ -1,0 +1,108 @@
+
+
+/* assets */
+
+.dropdown_content
+{
+	height: 0px;
+	color: #000;
+	overflow: hidden;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.tabbed_menu
+{
+	border: 1px solid black;
+	height: 200px;
+}
+
+.tabbed_menu > .button_area
+{
+	border-bottom: 1px solid black;
+}
+
+
+.tabbed_menu > .content_area 
+{
+	background-color: white;
+	height: 122px;
+	padding: 10px;
+}
+
+.tabbed_menu > .content_area > div
+{
+	height: 100px;
+	visibility: hidden;
+	position: absolute;
+	background-color: white;
+}
+
+.horizontal_content
+{
+	top:0px;
+	height: 100vh;
+	visibility: hidden;
+	position: fixed;
+	overflow: hidden;
+	z-index: 2;
+	background-color: #5ea55f;
+}
+
+.horizontal_content > div
+{
+	padding: 10px;
+}
+
+
+.popup_box_background
+{
+	top: 0px;
+	position: fixed;
+	opacity: 0.9;
+	background-color: grey;
+	width: 100vw;
+	height: 100vh;
+	visibility: hidden;
+}
+.popup_box
+{
+	width: 90%;
+	visibility: hidden;
+	background-color: white;
+	position: fixed;
+	top: 0px;
+	z-index: 3;
+	padding: 10px;
+	height: 80vh;
+	margin: 10px;
+	border-radius: 5px;
+	text-align: center;
+}
+
+
+/* Demo page */
+body
+{
+	font-family: 'Indie Flower', cursive;
+	background-color: #a6eda7;
+	margin: 0px;
+}
+
+.title_section
+{
+	background-color: #5ea55f;
+	color: #fff;
+	padding: 10px;
+}
+
+.btn
+{
+	padding: 10px;
+	font-size: 10px;
+	margin: 10px;
+	margin-right: 0px;
+	background-color: #5ea55f;
+	color: #fff;
+	border: 2px solid #5ea55f;
+}

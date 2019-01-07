@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="flashy.css">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> 
+</head>
+<html>
+<body>
+  <div class="title_section">
+    <h1>FlashyJS by Tony Chambers</h1>
+  </div>
+
+  <h1>Slidedown content examples</h1>
+  <!-- use the following template to structure your slide-in -->
+  <button class="btn" onclick="slidedownContentSlow();">Click me</button>
+  <div class="dropdown_content" id="id1">
+    <h2>I'm a fast moving content reveal</h2>
+  </div>
+
+  <button class="btn" onclick="slidedownContentFast();">Click me</button>
+  <div class="dropdown_content" id="id2">
+    <h2>I'm a slow moving content reveal</h2>
+  </div>
+
+
+  <br/>
+  <br/>
+
+
+  <h1>Tabbed menu example</h1>
+  <!-- use the following template to structure your tabbed menu -->
+
+  <div class="tabbed_menu" id="sampleMenu">
+
+    <div class="button_area">
+      <button class="btn">tab1</button>
+      <button class="btn">tab2</button>
+      <button class="btn">tab3</button>
+      <button class="btn">tab4</button>
+    </div>
+
+    <div class="content_area">
+      <div>
+        <h2>This is the content of tab 1</h2>
+      </div>
+      <div>
+        <h2>This is the content of tab 2</h2>
+      </div>
+      <div>
+        <h2>This is the content of tab 3</h2>
+      </div>
+      <div>
+        <h2>This is the content of tab 4</h2>
+      </div>
+
+    </div>
+
+  </div>
+
+  <br/>
+  <br/>
+
+  <h1>Horizontal content reveal examples</h1>
+  <!-- use the following template to structure your slide-in -->
+  <button class="btn" onclick="horizontalSlideIn();">Click me</button>
+  <div id="id3" class="horizontal_content">
+    <div>
+      <h2>I am content that slides in horizontally</h2>
+    </div>
+  </div>
+
+  <br />
+  <br />
+
+  <h1>Pop-up box example</h1>
+  <!-- use the following template to structure your pop-up -->
+  <button class="btn" onclick="popupBox();">Click me</button>
+  <div id="background" class="popup_box_background">
+  </div>
+  <div id="foreground" class="popup_box">
+    <h2>I am content that pops up!</h2>
+    <button class="btn" id="closePopup">Close</button>
+  </div>
+
+
+  <script src="flashy.js"></script>
+  <script>	
+
+// Demo functions
+
+
+flashyJS.tabbedMenu("sampleMenu");
+
+
+function slidedownContentSlow()
+{
+// Pass in three parameters -> the id, the dropdown height in pixels and the speed...
+flashyJS.dropdownContent("id1",200,10);
+}
+
+function slidedownContentFast()
+{
+// Pass in three parameters -> the id, the dropdown height in pixels and the speed...
+flashyJS.dropdownContent("id2",200,1);
+}
+
+function horizontalSlideIn()
+{
+// Pass in four parameters -> the id, the slide-in width in %, and the speed between 1 and 10. 
+flashyJS.horizontalContentIn("id3",50,1)
+}
+
+function popupBox()
+{
+//Pass in the id of the pop-up element, the pop-up background element and also the id of the close button to get rid of the popup
+flashyJS.popupBox("foreground", "background", "closePopup");
+}
+
+
+</script>
+
+</body>
+</html>
