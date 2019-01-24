@@ -1,90 +1,228 @@
 
 <!DOCTYPE html>
 <head>
-  <link rel="stylesheet" href="flashy.css">
-  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> 
+	<link rel="stylesheet" href="flashy.css">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> 
 </head>
 <html>
 <body>
-  <div class="title_section">
-    <h1>FlashyJS by Tony Chambers</h1>
-  </div>
+	<div class="title_section">
+		<h1>FlashyJS by Tony Chambers</h1>
+	</div>
 
-  <h1>Slidedown content examples</h1>
-  <!-- use the following template to structure your slide-in -->
-  <button class="btn" onclick="slidedownContentSlow();">Click me</button>
-  <div class="dropdown_content" id="id1">
-    <h2>I'm a fast moving content reveal</h2>
-  </div>
+	<h1>Slidedown content examples</h1>
+	<!-- use the following template to structure your slide-in -->
+	<button class="btn" onclick="slidedownContentSlow();">Click me</button>
+	<div class="flashy_dropdown_content" id="dropdownContent1">
+		<h2>I'm a fast moving content reveal</h2>
+	</div>
 
-  <button class="btn" onclick="slidedownContentFast();">Click me</button>
-  <div class="dropdown_content" id="id2">
-    <h2>I'm a slow moving content reveal</h2>
-  </div>
-
-
-  <br/>
-  <br/>
+	<button class="btn" onclick="slidedownContentFast();">Click me</button>
+	<div class="flashy_dropdown_content" id="dropdownContent2">
+		<h2>I'm a slow moving content reveal</h2>
+	</div>
 
 
-  <h1>Tabbed menu example</h1>
-  <!-- use the following template to structure your tabbed menu -->
-
-  <div class="tabbed_menu" id="sampleMenu">
-
-    <div class="button_area">
-      <button class="btn">tab1</button>
-      <button class="btn">tab2</button>
-      <button class="btn">tab3</button>
-      <button class="btn">tab4</button>
-    </div>
-
-    <div class="content_area">
-      <div>
-        <h2>This is the content of tab 1</h2>
-      </div>
-      <div>
-        <h2>This is the content of tab 2</h2>
-      </div>
-      <div>
-        <h2>This is the content of tab 3</h2>
-      </div>
-      <div>
-        <h2>This is the content of tab 4</h2>
-      </div>
-
-    </div>
-
-  </div>
-
-  <br/>
-  <br/>
-
-  <h1>Horizontal content reveal examples</h1>
-  <!-- use the following template to structure your slide-in -->
-  <button class="btn" onclick="horizontalSlideIn();">Click me</button>
-  <div id="id3" class="horizontal_content">
-    <div>
-      <h2>I am content that slides in horizontally</h2>
-    </div>
-  </div>
-
-  <br />
-  <br />
-
-  <h1>Pop-up box example</h1>
-  <!-- use the following template to structure your pop-up -->
-  <button class="btn" onclick="popupBox();">Click me</button>
-  <div id="background" class="popup_box_background">
-  </div>
-  <div id="foreground" class="popup_box">
-    <h2>I am content that pops up!</h2>
-    <button class="btn" id="closePopup">Close</button>
-  </div>
+	<br/>
+	<br/>
+	<br />
+	<br />
 
 
-  <script src="flashy.js"></script>
-  <script>	
+	<h1>Tabbed menu example</h1>
+	<!-- use the following template to structure your tabbed menu -->
+
+	<div class="flashy_tabbed_menu" id="sampleMenu">
+
+		<div class="flashy_tabs_button_area">
+			<button class="btn">tab1</button>
+			<button class="btn">tab2</button>
+			<button class="btn">tab3</button>
+			<button class="btn">tab4</button>
+		</div>
+
+		<div class="flashy_tabs_content_area">
+			<div>
+				<h2>This is the content of tab 1</h2>
+			</div>
+			<div>
+				<h2>This is the content of tab 2</h2>
+			</div>
+			<div>
+				<h2>This is the content of tab 3</h2>
+			</div>
+			<div>
+				<h2>This is the content of tab 4</h2>
+			</div>
+		</div>
+	</div>
+
+	<br/>
+	<br/>
+	<br />
+	<br />
+
+	<h1>Horizontal content reveal examples</h1>
+	<!-- use the following template to structure your slide-in -->
+	<button class="btn" onclick="horizontalSlideIn();">Click me</button>
+	<div id="horizontalSlideIn" class="flashy_horizontal_content">
+		<div>
+			<h2>I am content that slides in horizontally</h2>
+		</div>
+	</div>
+
+	<br />
+	<br />
+	<br />
+	<br />
+
+	<h1>Pop-up box example</h1>
+	<!-- use the following template to structure your pop-up -->
+	<button class="btn" onclick="popupBox();">Click me</button>
+	<div id="background" class="flashy_popup_box_background">
+	</div>
+	<div id="foreground" class="flashy_popup_box">
+		<h2>I am content that pops up!</h2>
+		<button class="btn" id="closePopup">Close</button>
+	</div>
+
+	<br />
+	<br />
+	<br />
+	<br />
+
+	<h1>Dropdown menu example</h1>
+	<!-- use the following template to structure your dropdown -->
+	<div class="flashy_menu" id="sampleDropdownMenu">
+		<div id="dropdownMenu1" class="flashy_menu_header">
+			<button class="flashy_menu_button">Item 1</button>
+			<div class="flashy_dropdown_menu">
+				<p><a href="#">Item</a></p>
+				<p><a href="#">Item</a></p>
+				<p><a href="#">Item</a></p>
+			</div>
+		</div>
+		<div id="dropdownMenu2" class="flashy_menu_header">
+			<button class="flashy_menu_button">Item 2</button>
+			<div class="flashy_dropdown_menu">
+				<p><a href="#">Item</a></p>
+				<p><a href="#">Item</a></p>
+				<p><a href="#">Item</a></p>
+			</div>
+		</div>
+	</div>
+
+	<br />
+	<br />
+	<br />
+	<br />
+
+
+	<h1>Sticky object example</h1>
+	<!-- use the following template to structure your dropdown - the class sticky_object_container is just for demo purposes only. -->
+
+	<div id="idSticky" class="flashy_sticky_object_container"><h1>I am a sticky object. I will remain in position on scrolling.</h1></div> 
+
+	<br />
+	<br />
+	<br />
+	<br />
+
+	<h1>Notification</h1>
+	<!-- use the following template to structure your notification --> 
+
+	<div id="idTargetEl" class="flashy_notification_target"><h1>Hover over me</h1></div>
+	<div id="idNotificationEl" class="flashy_notification">
+		<p>This is some useful info about this element.</p>
+	</div>
+
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	
+
+
+	<script src="flashy.js"></script>
+	<script>	
 
 // Demo functions
 
@@ -95,19 +233,19 @@ flashyJS.tabbedMenu("sampleMenu");
 function slidedownContentSlow()
 {
 // Pass in three parameters -> the id, the dropdown height in pixels and the speed...
-flashyJS.dropdownContent("id1",200,10);
+flashyJS.dropdownContent("dropdownContent1",200,10);
 }
 
 function slidedownContentFast()
 {
 // Pass in three parameters -> the id, the dropdown height in pixels and the speed...
-flashyJS.dropdownContent("id2",200,1);
+flashyJS.dropdownContent("dropdownContent2",200,1);
 }
 
 function horizontalSlideIn()
 {
 // Pass in four parameters -> the id, the slide-in width in %, and the speed between 1 and 10. 
-flashyJS.horizontalContentIn("id3",50,1)
+flashyJS.horizontalContentIn("horizontalSlideIn",50,1);
 }
 
 function popupBox()
@@ -116,6 +254,19 @@ function popupBox()
 flashyJS.popupBox("foreground", "background", "closePopup");
 }
 
+
+//Dropdown menu. Pass in the id of the dropdown menu.	
+flashyJS.dropdownMenu("dropdownMenu1");
+flashyJS.dropdownMenu("dropdownMenu2");
+
+
+//Sticky object. Pass in the id of the object, and the number of pixels from the top of the screen when stickyObject will commence.
+flashyJS.stickyObject("idSticky", 50);
+
+
+//Notification. Pass in the id of the target element, amd the id of the notification element.
+
+flashyJS.notification("idTargetEl", "idNotificationEl");
 
 </script>
 

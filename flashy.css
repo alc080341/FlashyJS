@@ -2,7 +2,12 @@
 
 /* assets */
 
-.dropdown_content
+
+
+
+/* Dropdown content reveal */
+
+.flashy_dropdown_content
 {
 	height: 0px;
 	color: #000;
@@ -11,34 +16,75 @@
 	padding-right: 10px;
 }
 
-.tabbed_menu
+
+
+
+/* Dropdown menu */
+
+.flashy_menu
 {
-	border: 1px solid black;
-	height: 200px;
+	background-color: #5ea55f;
+	height: 50px;
 }
 
-.tabbed_menu > .button_area
+.flashy_menu > .flashy_menu_header > .flashy_menu_button
 {
-	border-bottom: 1px solid black;
-}
-
-
-.tabbed_menu > .content_area 
-{
-	background-color: white;
-	height: 122px;
 	padding: 10px;
+	font-size: 20px;
+	background-color: #5ea55f;
+	color: #fff;
+	border: 2px solid #5ea55f;
 }
 
-.tabbed_menu > .content_area > div
+.flashy_menu > .flashy_menu_header
 {
-	height: 100px;
-	visibility: hidden;
-	position: absolute;
-	background-color: white;
+	display: inline-block;
+	width: 200px;
+	margin: auto;
+	text-align: center;
 }
 
-.horizontal_content
+.flashy_menu > .flashy_menu_header > .flashy_dropdown_menu
+{
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+	display: none;
+	position: absolute;
+	overflow: hidden;
+	background-color: white;
+	border-left: 1px solid #5ea55f;
+	border-right: 1px solid #5ea55f;
+	min-width: 150px;
+/*	width: -webkit-fit-content;
+width: -moz-fit-content; */
+}
+
+.flashy_dropdown_menu > p > a
+{
+	color: #5ea55f;
+}
+
+.flashy_dropdown_menu > p:hover
+{
+	background-color: green;
+}
+
+.flashy_dropdown_menu > p > a:hover
+{
+	color: white;
+}
+
+
+.flashy_dropdown_menu > p > a
+{
+	text-decoration: none;
+}
+
+
+/* Horizontal slide-in */
+
+.flashy_horizontal_content
 {
 	top:0px;
 	height: 100vh;
@@ -47,15 +93,47 @@
 	overflow: hidden;
 	z-index: 2;
 	background-color: #5ea55f;
+	color: white;
 }
 
-.horizontal_content > div
+.flashy_horizontal_content > div
 {
 	padding: 10px;
 }
 
 
-.popup_box_background
+
+
+
+
+/* Notification */
+
+.flashy_notification_target 
+{
+	width: 350px;
+	background-color: #5ea55f;
+	color: white;
+	padding: 10px;
+}
+
+.flashy_notification
+{
+	padding: 5px;
+	background-color: white;
+	border: 1px solid #5ea55f;
+	color: #5ea55f;
+	display: none;
+	width: 100px;
+	margin-top: -20px;
+}
+
+
+
+
+
+/* Pop-up */
+
+.flashy_popup_box_background
 {
 	top: 0px;
 	position: fixed;
@@ -65,7 +143,8 @@
 	height: 100vh;
 	visibility: hidden;
 }
-.popup_box
+
+.flashy_popup_box
 {
 	width: 90%;
 	visibility: hidden;
@@ -81,7 +160,82 @@
 }
 
 
-/* Demo page */
+
+
+
+
+
+
+
+/* Sticky object */
+
+.flashy_sticky_object
+{
+	position: fixed;
+	font-size: 10px;
+	border-radius: 20px;
+	opacity: 0.8;
+}
+
+
+.flashy_sticky_object_container
+{
+	padding: 15px;
+	background-color: #5ea55f;
+	color: #fff;
+	-webkit-transition: all 500ms ease-in;
+	-moz-transition: all 500ms ease-in;
+	-o-transition: all 500ms ease-in;
+	transition: all 500ms ease-in;
+	width: 350px;
+}
+
+
+
+
+
+/* Tabbed menu */
+
+.flashy_tabbed_menu
+{
+	border: 1px solid black;
+}
+
+.flashy_tabbed_menu > .flashy_tabs_button_area
+{
+	border-bottom: 1px solid black;
+}
+
+
+.flashy_tabbed_menu > .flashy_tabs_content_area 
+{
+	background-color: white;
+	height: 122px;
+	padding: 10px;
+}
+
+.flashy_tabbed_menu > .flashy_tabs_content_area > div
+{
+	height: 100px;
+	visibility: hidden;
+	position: absolute;
+	background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Demo page only - not needed for functionality*/
 body
 {
 	font-family: 'Indie Flower', cursive;
