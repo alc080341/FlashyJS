@@ -67,13 +67,10 @@ width: -moz-fit-content; */
 
 .flashy_dropdown_menu > p:hover
 {
-	background-color: green;
+	background-color: #dcdcdc;
 }
 
-.flashy_dropdown_menu > p > a:hover
-{
-	color: white;
-}
+
 
 
 .flashy_dropdown_menu > p > a
@@ -146,15 +143,15 @@ width: -moz-fit-content; */
 
 .flashy_popup_box
 {
-	width: 90%;
+	width: 95%;
 	visibility: hidden;
 	background-color: white;
 	position: fixed;
-	top: 0px;
+	top: 10px;
 	z-index: 3;
 	padding: 10px;
 	height: 80vh;
-	margin: 10px;
+	margin-left: 10px;
 	border-radius: 5px;
 	text-align: center;
 }
@@ -219,12 +216,41 @@ width: -moz-fit-content; */
 	height: 100px;
 	visibility: hidden;
 	position: absolute;
-	background-color: white;
 }
 
 
 
 
+
+
+/* Smaller devices */
+
+@media only screen and (max-width: 701px) 
+{
+
+.flashy_menu > .flashy_menu_header
+{
+	width: 100px;
+}
+
+.flashy_sticky_object_container
+{
+	width: 250px;
+}
+
+
+.flashy_notification_target 
+{
+	width: 250px;
+}
+
+
+.flashy_popup_box
+{
+	width: 90%;
+}
+
+}
 
 
 
@@ -260,3 +286,5 @@ body
 	color: #fff;
 	border: 2px solid #5ea55f;
 }
+
+
