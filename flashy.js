@@ -1,7 +1,7 @@
 
 var library = function()
 {
-	this.dropdownContent = function(id, ht, spd)
+	this.dropdownContent = (id, ht, spd) =>
 	{
 		let height;
 		let thisId = document.getElementById(id);
@@ -34,7 +34,7 @@ var library = function()
 		}
 	}
 
-	this.tabbedMenu = function(id)
+	this.tabbedMenu = (id) =>
 	{
 		var contentArr = document.getElementById(id).childNodes; 
 		var j;
@@ -60,7 +60,7 @@ var library = function()
 		}
 	}
 
-	this.horizontalContentIn = function(id, spd)
+	this.horizontalContentIn = (id, spd) =>
 	{
 		let maxWidth;
 		let width;
@@ -107,7 +107,7 @@ var library = function()
 		});
 	}    
 
-	this.popupBox = function(id, id2, closeID)
+	this.popupBox = (id, id2, closeID) =>
 	{
 		let thisId = document.getElementById(id);
 		let thisId2 = document.getElementById(id2)
@@ -128,7 +128,7 @@ var library = function()
 
 
 
-	this.dropdownMenu = function(id)
+	this.dropdownMenu = (id) =>
 	{
 		var currentElem = document.getElementById(id);
 		var thisId = currentElem.childNodes[3];
@@ -168,7 +168,7 @@ var library = function()
 	}
 
 
-	this.stickyObject = function(id, ht)
+	this.stickyObject = (id, ht) =>
 	{
 		let stickyObj = document.getElementById(id);
 		let stickyObjPos = stickyObj.offsetTop;
@@ -187,7 +187,7 @@ var library = function()
 		});
 	}
 
-	this.notification = function(id, id2)
+	this.notification = (id, id2) =>
 	{
 		let targetEl = document.getElementById(id);
 		let hoverEl = document.getElementById(id2);
