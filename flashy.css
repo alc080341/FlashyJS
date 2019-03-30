@@ -56,8 +56,6 @@
 	border-left: 1px solid #5ea55f;
 	border-right: 1px solid #5ea55f;
 	min-width: 150px;
-/*	width: -webkit-fit-content;
-width: -moz-fit-content; */
 }
 
 .flashy_dropdown_menu > p > a
@@ -143,17 +141,22 @@ width: -moz-fit-content; */
 
 .flashy_popup_box
 {
-	width: 95%;
 	visibility: hidden;
-	background-color: white;
-	position: fixed;
-	top: 10px;
-	z-index: 3;
-	padding: 10px;
-	height: 80vh;
-	margin-left: 10px;
-	border-radius: 5px;
+	display: block;
+	background-color: #fff;
 	text-align: center;
+	z-index: 1;
+	margin: auto;
+	padding: 10px;
+	top:50%;
+	left:50%;
+	width:550px;  
+	min-height:400px;  
+	margin-left:-280px;   
+	margin-top:-200px; 
+	border: 1px solid black;  
+	position: fixed;
+	border-radius: 5px;
 }
 
 
@@ -247,7 +250,10 @@ width: -moz-fit-content; */
 
 .flashy_popup_box
 {
-	width: 90%;
+	width:85%;
+	left:0px;
+	margin-left: 5%;
+
 }
 
 }
